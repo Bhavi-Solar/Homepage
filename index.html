@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhavi Solar</title>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- Font Awesome for social media icons and back-to-top -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="logo-box">
+      <img src="bslogo.png" alt="Bhavi Solar" class="logo-img"/>
+    </div>
+    <div class="menu-icon">☰</div>
+    <ul class="nav-links">
+      <li><a href="#about">Company</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#footer">Contact us</a></li>
+      <li><button class="inquiry-btn" onclick="location.href='#contact'">Get Quote</button></li>
+    </ul>
+  </nav>
+
+  <!-- Hero with video background -->
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="solarvid.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <br><h1>Clean Energy<br>powered by Bhavi Solar</h1><br>
+      <button class="join-btn" onclick="location.href='#contact'">Join us</button>
+    </div>
+  </section>
+
+  <!-- Solutions Slider -->
+  <section class="solutions-section">
+    <div class="solutions-slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="pvcell.svg" class="col-img" alt="Photovoltaic systems"><h4>Photovoltaic systems</h4></div>
+        <div class="swiper-slide"><img src="storage.svg" class="col-img" alt="Energy storage systems"><h4>Energy storage systems</h4></div>
+        <div class="swiper-slide"><img src="iot.svg" class="col-img" alt="IoT Technology"><h4>IoT Technology</h4></div>
+        <div class="swiper-slide"><img src="mgmtsystem.png" class="col-img" alt="Energy management system"><h4>Energy management system</h4></div>
+        <div class="swiper-slide"><img src="smartgrid.png" class="col-img" alt="Smart grid"><h4>Smart grid</h4></div>
+        <div class="swiper-slide"><img src="cleaning.png" class="col-img" alt="Cleaning systems"><h4>Cleaning systems</h4></div>
+      </div>
+      <div class="navigation-wrap">
+        <div class="swiper-button-prev" aria-label="Previous slide"></div>
+        <div class="swiper-button-next" aria-label="Next slide"></div>
+      </div>
+      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+    </div>
+  </section>
+
+  <!-- Content Wrapper for About Us and Products -->
+  <div class="content-wrapper">
+    <!-- About Us -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <p>Bhavi Solar is a leading manufacturer of high‑efficiency solar panels and a full‑service provider of industrial solar solutions. With state‑of‑the‑art R&D, we design, install, and maintain solar power systems tailored to large‑scale industrial needs, helping businesses reduce energy costs and carbon footprint.</p>
+      </div>
+    </section>
+
+    <!-- Products & Services -->
+    <section id="products">
+      <div class="container">
+        <h2 class="section-title">What we offer</h2><br>
+        <div class="grid">
+          <div class="card"><h3>Solar Panel Manufacturing</h3><p>High‑efficiency panels with up to 22% conversion rate, built for durability and performance.</p><button>Learn More</button></div>
+          <div class="card"><h3>Turnkey Installations</h3><p>End‑to‑end project management from design and permitting to installation and commissioning.</p><button>Learn More</button></div>
+          <div class="card"><h3>System Maintenance</h3><p>Comprehensive O&M services including cleaning, monitoring, and preventative maintenance.</p><button>Learn More</button></div>
+          <div class="card"><h3>Energy Storage Solutions</h3><p>Industrial‑scale battery systems for load shifting, backup power, and peak shaving.</p><button>Learn More</button></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Contact Us -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact us</h2>
+      <form class="contact-grid">
+        <div class="col">
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name" placeholder="Your Name" required />
+          <label for="phone">Phone</label>
+          <input id="phone" type="tel" name="phone" placeholder="Your Phone Number" />
+           <label for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="Your Email" required />
+          </div>
+        <div class="col">
+          <label for="company">Organization name</label>
+          <input id="company" type="text" name="company" placeholder="Your Company(s) Name" />
+          <label for="purpose">Please choose a purpose</label>
+          <select id="purpose" name="purpose" required>
+            <option value="" disabled selected>Please choose a purpose</option>
+            <option value="general">General information</option>
+            <option value="products">Products</option>
+            <option value="concepts">Concepts and planning</option>
+            <option value="partnerships">Partnerships</option>
+            <option value="project">Project inquiry</option>
+          </select>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="How can we help you?" required></textarea>
+        </div>
+        <div class="full-width"><button type="submit" class="send-btn">Send</button></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-logo-container">
+      <img src="bslogo.png" alt="Bhavi Solar" class="footer-logo"/>
+    </div>
+    <div class="footer-content">
+      <section class="contact-info">
+        <address>
+          Bhavi Solar Pvt. Ltd.<br>
+          Sumel Business Park 5<br>
+          Asarwa 380016<br>
+          Ahmedabad Gujarat<br>
+          +91 9724337639<br>
+          roshanbafnabhavi@gmail.com
+          </address>
+        <ul class="social-media-list">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </section>
+      <section class="solutions-links">
+        <h3>Solutions</h3>
+        <ul>
+          <li><a href="#">Storage Solutions</a></li>
+          <li><a href="#">Solar Installation</a></li>
+          <li><a href="#">Solar Cleaning Systems</a></li>
+          <li><a href="#">System Maintenance</a></li>
+          <li><a href="#">IoE Solutions</a></li>
+        </ul>
+      </section>
+    </div>
+    <hr class="footer-divider">
+    <div class="footer-bottom">
+      <p>© 2025 Bhavi Solar Pvt. Ltd. India</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Swiper JS & init -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper('.solutions-slider', {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      loop: true,
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+      breakpoints: { 640: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+    });
+  </script>
+  <script>
+    document.querySelector('.menu-icon').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+  <script>
+    // Back to Top functionality
+    const backToTopButton = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    });
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93e9effecda1857d',t:'MTc0NzA1MzEzMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93e9f7b4b800bcd4',t:'MTc0NzA1MzQ0OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
